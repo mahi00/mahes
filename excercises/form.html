@@ -1,25 +1,39 @@
+
 <!DOCTYPE html>
 <html>
     <head>
         <title>card form</title>
         <style>
-            div.ex1{
-                     border: 3px solid #73AD21;
-                      width:310px;
-                   }
+            label{
+text-align: right;
+  width: 150px;
+  display: block;
+  float: left;
+  margin-right:5px;
+  }
+input{
+  padding:2px;
+  margin:3px;
+}
         </style>
     </head>
       <body>
-        <div class="ex1">
-          <form>
-               ticket id:   <input type="text" placeholder="ticket id" name="" size="10%" required >
-               <input type="text" placeholder="name" name="" size="10%" required >name
-               <br><br>
-               activity name:<textarea rows="2" cols="20" name="comment" form="usrform"required >Enter text here...</textarea><br><br>
-               work in hours:<input type="text" placeholder="work hours" name="" size="10%" required > 
-            <input type="submit">
-        </form>
-        </div>
+            <form>
+                    <label for="ticket id">Ticket ID :</label>
+                    <input type="text" name="first name" id="ticket id"  placeholder="ticket id" required ><br>
+                    <label for="first name">Name :</label>
+                    <input type="text" name="first name" id="first name" placeholder=Name required><br>
+                    <label for="textarea">activity name :</label>
+                    <textarea rows="2" cols="20" id="textarea"></textarea
+                    ><br>
+                    <label for="number">Working Hours :</label>
+                    <input type="number" placeholder="work hours" name="" size="10%" required > 
+                  <br>
+                    <label for="submit">indicates a blocker:</label>
+                    <input type="submit" name="submit">
+                      
+                    </form>
     </body>
 </html>
+
 
