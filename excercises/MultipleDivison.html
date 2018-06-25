@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Multiple division</title>
+</head>
+
+<body>
+
+    <p id="demo"></p>
+    <script>
+    var x=division(576,5);
+        document.getElementById("demo").innerHTML=x;
+        function division(dividend, divisor) {
+            var quotient = 0;
+            var reminder = dividend;
+            do {
+                reminder = reminder - divisor;
+                quotient++;
+            }
+            while (reminder >= divisor);
+            return reminder;
+        }
+    </script>
+
+
+</body>
+
+</html>

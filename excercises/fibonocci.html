@@ -1,0 +1,27 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>
+        Fibnocci Series
+    </title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        var x = fibnocci(10);
+        document.getElementById("demo").innerHTML = x;
+
+        function fibnocci(n) {
+            var fibarray = [0, 1];
+            for (var i = 2; i < n; i++) {
+                fibarray[i] = fibarray[i - 2] + fibarray[i - 1];
+            }
+            return fibarray;
+        }
+    </script>
+
+</body>
+
+</html>
