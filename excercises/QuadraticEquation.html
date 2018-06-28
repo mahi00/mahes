@@ -1,0 +1,25 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>finding root values in quadratic equation </title>
+</head>
+
+<body>
+
+    <script>
+        var a = prompt("Enter a value:");
+        var b = prompt("Enter b value:");
+        var c = prompt("Enter c value:");
+
+        var rootpart =
+            Math.sqrt((b * b) - (4 * a * c));
+        var denom = 2 * a;
+        var x = (-b + rootpart) / denom;
+        var y = (-b - rootpart) / denom;
+        document.write("1 st root:" + x + "<br>");
+        document.write("2nd root:" + y + "<br>");
+    </script>
+</body>
+
+</html>

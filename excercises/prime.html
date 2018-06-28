@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> prime number  </title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        var x=getPrimes("1000");
+        document.getElementById("demo").innerHTML=x;
+        function getPrimes(max) {
+            var num = [],
+                i, j, primes = [];
+            for (i = 2; i <= max; ++i) {
+                if (!num[i]) {
+                    primes.push(i);
+                    for (j = i << 1; j <= max; j += i) {
+                        num[j] = true;
+                    }
+                }
+            }
+            return primes;
+        }
+    </script>
+</body>
+
+</html>

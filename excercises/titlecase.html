@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> titlecase </title>
+</head>
+
+<body>
+<p id="demo"></p>
+    <script>
+        var x=titleCase("my name is mahesh");
+        document.getElementById("demo").innerHTML=x;
+        function titleCase(str) {
+            
+            str = str.toLowerCase().split(' ');
+            for (var i = 0; i<str.length; i++) {
+                str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+            }
+            return str.join(" ");
+        }
+
+    </script>
+</body>
+
+</html>
