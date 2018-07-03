@@ -1,0 +1,39 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Rectangle area and perimeter</title>
+</head>
+
+<body>
+    
+    <script>
+        //create a constructor
+        function Rectangle(l, b) {
+            this.x = l;
+            this.y = b;
+
+        }
+        //create an object 
+        var r1 = new Rectangle(10, 20);
+
+        area(); //function calling
+
+        //caluculate area of rectangle
+        function area() //function defination
+        {
+            var area = r1.x * r1.y;
+            document.write("Area of Rectangle is:" + area + "<br>");
+        }
+        //calculate perimeter of rectangle
+        perimeter(); //function calling
+
+        function perimeter() //function defination
+        {
+            var p = 2 * (r1.x + r1.y);
+            document.write("Perimeter of rectangle is:" + p);
+        }
+    </script>
+</body>
+
+</html>

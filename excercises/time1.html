@@ -1,0 +1,48 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>
+        time converted
+    </title>
+</head>
+
+<body>
+  
+    <script type="text/javascript">
+   
+        function time(h,m){
+        var AM_PM=" ";
+        var date=new date();
+        var h=date.gethours();
+        var m=date.getMinutes();
+        if(h < 12)
+        {
+            AM_PM="AM";
+
+        }
+        else
+        {
+            AM_PM="PM";
+        }
+        if(h == 0)
+        {
+            h = 12;
+        }
+        if(h < 12)
+        {
+            h = h -12;
+        }
+        
+        h=(h<10) ? "0" + h : h;
+        m=(m<10) ? "0" + m : m;
+        var time = h +" : " + m + ""+ AM_PM ;
+        document.write(time);
+        }
+        time(20,52);
+
+    </script>
+    
+</body>
+
+</html>
