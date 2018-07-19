@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<style>
+    .container {
+        margin: auto;
+        padding: auto;
+    }
+
+    header {
+        background-color: #666;
+
+        margin: auto;
+        text-align: center;
+        font-size: 25px;
+        color: white;
+        height: 70px;
+    }
+
+    .ma {
+        background-color: aqua;
+    }
+
+    .li {
+        color: white;
+    }
+
+    table {
+        font-family: arial, sans-serif;
+
+
+
+        border: 2px solid white;
+
+
+    }
+
+    td,
+    th {
+        border: 1px solid #0000ff;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr {
+        color: #38b9f5;
+    }
+
+    td {
+        color: #00ff00;
+    }
+    .mahesh{
+        background-color: aqua;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Live Cricket Score</h1>
+        </header>
+
+        <nav class="navbar navbar-inverse">
+
+                <div class="btn-group btn-group-lg">
+                <li class="active">
+                    <div class="btn-group">
+
+                        <a href="#" class="btn btn-primary">Home</a>
+                        <a href="#" class="btn btn-primary">Commentary</a>
+                        <a href="#" class="btn btn-primary"> Scorecard</a>
+                        <a href="#" class="btn btn-primary">Highlights</a>
+                        <a href="#" class="btn btn-primary"> Full Commentary</a>
+                        <a href="#" class="btn btn-primary"> News</a>
+                        <a href="#" class="btn btn-primary"> Photos</a>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-user"></span> Your Account</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-shopping-cart"></span> Cart</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </div>
+            <div class="ma">India Innings
+                <span style="text-align: right">256-8 (50)</span>
+            </div>
+            <div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th item-width="150px">Batsman</th>
+                            <th>runs</th>
+                            <th>balls</th>
+                            <th>4s</th>
+                            <th>6s</th>
+                            <th>SR</th>
+                        </tr>
+                        <thead>
+                            <tbody>
+                                <tr>
+                                    <td>Rohit Sharma</td>
+                                    <td>2</td>
+                                    <td>18</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>11.11</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Shikhar Dhawan</td>
+                                    <td>44</td>
+                                    <td>49</td>
+                                    <td>7</td>
+                                    <td>0</td>
+                                    <td>89.80</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Virat Kohli (c)</td>
+                                    <td>71</td>
+                                    <td>72</td>
+                                    <td>8</td>
+                                    <td>0</td>
+                                    <td>98.61</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Dinesh Karthik</td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                    <td>95.45</td>
+
+                                </tr>
+                                <tr>
+                                    <td>MS Dhoni (wk)</td>
+                                    <td>42</td>
+                                    <td>66</td>
+                                    <td>4</td>
+                                    <td>0</td>
+                                    <td>63.64</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Suresh Raina</td>
+                                    <td>1</td>
+                                    <td>4</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>25.00</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Hardik Pandya</td>
+                                    <td>21</td>
+                                    <td>21</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>Bhuvneshwar Kumar</td>
+                                    <td>21</td>
+                                    <td>35</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>60.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Shardul Thakur</td>
+                                    <td>22</td>
+                                    <td>13</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>169.23</td>
+                                </tr>
+                                <tr>
+                                    <td>Kuldeep Yadav</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td> Yuzvendra Chahal</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                </table>
+            </div>
+            <div class="mahesh">Bowler</div>
+            <div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Bowler</th>
+                            <th>overs</th>
+                            <th>midden</th>
+                            <th>runs</th>
+                            <th>wickets</th>
+                            <th>no ball</th>
+                            <th>wide</th>
+                            <th>ECO</th>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td>Mark Wood</td>
+                            <td>10</td>
+                            <td>2</td>
+                            <td>30</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>3.00</td>
+
+                        </tr>
+                        <tr>
+                            <td>Shikhar Dhawan</td>
+                            <td>44</td>
+                            <td>49</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>89.80</td>
+                            <td>0</td>
+                            <td>11.11</td>
+
+                        </tr>
+                        <tr>
+                                <td>Shikhar Dhawan</td>
+                                <td>44</td>
+                                <td>49</td>
+                                <td>7</td>
+                                <td>0</td>
+                                <td>89.80</td>
+                                <td>0</td>
+                                <td>11.11</td>
+    
+                            </tr>
+                            <tr>
+                                    <td>Shikhar Dhawan</td>
+                                    <td>44</td>
+                                    <td>49</td>
+                                    <td>7</td>
+                                    <td>0</td>
+                                    <td>89.80</td>
+                                    <td>0</td>
+                                    <td>11.11</td>
+        
+                                </tr>
+                                <tr>
+                                        <td>Shikhar Dhawan</td>
+                                        <td>44</td>
+                                        <td>49</td>
+                                        <td>7</td>
+                                        <td>0</td>
+                                        <td>89.80</td>
+                                        <td>0</td>
+                                        <td>11.11</td>
+            
+                                    </tr>
+                                    <tr>
+                                            <td>Shikhar Dhawan</td>
+                                            <td>44</td>
+                                            <td>49</td>
+                                            <td>7</td>
+                                            <td>0</td>
+                                            <td>89.80</td>
+                                            <td>0</td>
+                                            <td>11.11</td>
+                
+                                        </tr>
+                </table>
+            </div>
+            <div class="ma">England Innings
+                    <span style="text-align: right">260-2 (44.3)</span>
+                </div>
+                <div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th item-width="150px">Batsman</th>
+                                <th>runs</th>
+                                <th>balls</th>
+                                <th>4s</th>
+                                <th>6s</th>
+                                <th>SR</th>
+                            </tr>
+                            <thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Rohit Sharma</td>
+                                        <td>2</td>
+                                        <td>18</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>11.11</td>
+    
+                                    </tr>
+                                    <tr>
+                                        <td>Shikhar Dhawan</td>
+                                        <td>44</td>
+                                        <td>49</td>
+                                        <td>7</td>
+                                        <td>0</td>
+                                        <td>89.80</td>
+    
+                                    </tr>
+                                    <tr>
+                                        <td>Virat Kohli (c)</td>
+                                        <td>71</td>
+                                        <td>72</td>
+                                        <td>8</td>
+                                        <td>0</td>
+                                        <td>98.61</td>
+    
+                                    </tr>
+                                    <tr>
+                                        <td>Dinesh Karthik</td>
+                                        <td>21</td>
+                                        <td>22</td>
+                                        <td>3</td>
+                                        <td>0</td>
+                                        <td>95.45</td>
+    
+                                    </tr>
+                                    <tr>
+                                        <td>MS Dhoni (wk)</td>
+                                        <td>42</td>
+                                        <td>66</td>
+                                        <td>4</td>
+                                        <td>0</td>
+                                        <td>63.64</td>
+    
+                                    </tr>
+                                    <tr>
+                                        <td>Suresh Raina</td>
+                                        <td>1</td>
+                                        <td>4</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>25.00</td>
+    
+                                    </tr>
+                                    <tr>
+                                        <td>Hardik Pandya</td>
+                                        <td>21</td>
+                                        <td>21</td>
+                                        <td>2</td>
+                                        <td>0</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bhuvneshwar Kumar</td>
+                                        <td>21</td>
+                                        <td>35</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>60.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shardul Thakur</td>
+                                        <td>22</td>
+                                        <td>13</td>
+                                        <td>0</td>
+                                        <td>2</td>
+                                        <td>169.23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kuldeep Yadav</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td> Yuzvendra Chahal</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                    </table>
+                </div>
+                <div class="mahesh">Bowler</div>
+                <div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Bowler</th>
+                                <th>overs</th>
+                                <th>midden</th>
+                                <th>runs</th>
+                                <th>wickets</th>
+                                <th>no ball</th>
+                                <th>wide</th>
+                                <th>run rate</th>
+                            </tr>
+                            </thead>
+                            <tr>
+                                <td>Rohit Sharma</td>
+                                <td>2</td>
+                                <td>18</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>11.11</td>
+                                <td>0</td>
+                                <td>11.11</td>
+    
+                            </tr>
+                            <tr>
+                                <td>Shikhar Dhawan</td>
+                                <td>44</td>
+                                <td>49</td>
+                                <td>7</td>
+                                <td>0</td>
+                                <td>89.80</td>
+                                <td>0</td>
+                                <td>11.11</td>
+    
+                            </tr>
+                            <tr>
+                                    <td>Shikhar Dhawan</td>
+                                    <td>44</td>
+                                    <td>49</td>
+                                    <td>7</td>
+                                    <td>0</td>
+                                    <td>89.80</td>
+                                    <td>0</td>
+                                    <td>11.11</td>
+        
+                                </tr>
+                                <tr>
+                                        <td>Shikhar Dhawan</td>
+                                        <td>44</td>
+                                        <td>49</td>
+                                        <td>7</td>
+                                        <td>0</td>
+                                        <td>89.80</td>
+                                        <td>0</td>
+                                        <td>11.11</td>
+            
+                                    </tr>
+                                    <tr>
+                                            <td>Shikhar Dhawan</td>
+                                            <td>44</td>
+                                            <td>49</td>
+                                            <td>7</td>
+                                            <td>0</td>
+                                            <td>89.80</td>
+                                            <td>0</td>
+                                            <td>11.11</td>
+                
+                                        </tr>
+                                        <tr>
+                                                <td>Shikhar Dhawan</td>
+                                                <td>44</td>
+                                                <td>49</td>
+                                                <td>7</td>
+                                                <td>0</td>
+                                                <td>89.80</td>
+                                                <td>0</td>
+                                                <td>11.11</td>
+                    
+                                            </tr>
+                    </table>
+                </div>
+
+
+
+</body>
+
+</html>
