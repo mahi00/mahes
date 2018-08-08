@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+
+            background-color: #AEAFAF;
+        }
+
+        .runs {
+            width: 20%;
+            margin: 20px 85px;
+            height: 150px;
+            background-color: #3A4046;
+            color: white;
+            float: left;
+
+
+        }
+
+        #btn {
+            width: 100%;
+            clear: both;
+            margin:auto;
+            padding:auto;
+            text-align: center;
+        }
+    </style>
+    <script>
+        var runs = (function () {
+            var runs = 0;
+            return function () {
+                return runs += 1;
+            }
+        })();
+        var overs = (function () {
+            var overs = 0;
+            return function () {
+                return overs += 1;
+            }
+        })();
+        var Wkts = (function () {
+            var Wkts = 0;
+            return function () {
+                return Wkts += 1;
+            }
+        })();
+
+        function myRuns() {
+            document.getElementById("Runs1").innerHTML = runs();
+        }
+
+        function myOvers() {
+            document.getElementById("Overs1").innerHTML = overs();
+        }
+
+        function myWkts() {
+            document.getElementById("W").innerHTML = Wkts();
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1 class="runs">
+        <span style="color:#fff">Total Runs:</span>
+        <span id="Runs1" style="color:#fff"></span>
+    </h1>
+
+    <h1 class="runs">
+        <span style="color:#fff">Total Over:</span>
+        <span id="Overs1" style="color:#fff"></span>
+    </h1>
+
+    <h1 class="runs">
+        <span style="color:#fff">Total Wkts:</span>
+        <span id="Wkts2" style="color:#fff"></span>
+    </h1>
+    <div id="btn">
+        <button onclick="myRuns()">Click Runs</button>
+
+
+        <button onclick="myOvers()">Click overs</button>
+
+
+        <button onclick="myWkts()">Click Wkts</button>
+    </div>
